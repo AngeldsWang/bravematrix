@@ -1,7 +1,7 @@
 title = "Brave Matrix"
-baseurl = "https://angeldswang.github.io/bookshelf/"
+baseurl = "https://angeldswang.github.io/"
 languageCode = "en-us"
 
 [Params]
   Author = "Angelds Wang"
-  disqusShortname = "http-angeldswang-github-io-bookshelf"
+  disqusShortname = "angeldswang"
