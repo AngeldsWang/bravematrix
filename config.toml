@@ -1,0 +1,7 @@
+title = "Brave Matrix"
+baseurl = "https://angeldswang.github.io/bookshelf/"
+languageCode = "en-us"
+
+[Params]
+  Author = "Angelds Wang"
+  disqusShortname = "wzjmit"
