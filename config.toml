@@ -2,9 +2,6 @@ title = "Brave Matrix"
 baseurl = "https://angeldswang.github.io/bookshelf/"
 languageCode = "en-us"
 
-PygmentsCodeFences = true
-PygmentsStyle = "monokai"
-
 [Params]
   Author = "Angelds Wang"
   disqusShortname = "http-angeldswang-github-io-bookshelf"
