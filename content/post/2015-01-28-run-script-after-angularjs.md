@@ -1,6 +1,6 @@
 +++
-date = "2017-01-10T15:35:55+09:00"
-title = "good to great"
+date = "2015-01-28T15:35:55+08:00"
+title = "Run script after Angularjs ng-repeat finishing"
 draft = false
 
 +++
