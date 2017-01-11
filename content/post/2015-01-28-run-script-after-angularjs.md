@@ -2,7 +2,8 @@
 date = "2015-01-28T15:35:55+08:00"
 title = "Run script after Angularjs ng-repeat finishing"
 draft = false
-
+tags = ["Angularjs"]
+categories = ["Angularjs"]
 +++
 
 这几天在做一个小项目的时候，用到了[Freewall](http://vnjs.net/www/project/freewall/)这个很nice的插件。它可以很方便的替你实现很多不错的grid layout。但在用到[Pinterest style layout](http://vnjs.net/www/project/freewall/example/pinterest-layout.html)的时候遇到了一个问题。官方给出的example如下:<!--more-->
