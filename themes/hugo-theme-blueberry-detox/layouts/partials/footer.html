@@ -7,10 +7,8 @@
     </footer>
 
     <script type="text/javascript" src="{{ .Site.BaseURL }}js/fittext.js"></script>
-    <script type="text/javascript"
-            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-    <script type="text/x-mathjax-config">
+    <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
      MathJax.Hub.Config({
          tex2jax: {
              inlineMath: [['$','$'], ['\\(','\\)']],
@@ -22,9 +20,7 @@
                     extensions: ["AMSmath.js", "AMSsymbols.js"] }
          }
      });
-    </script>
 
-    <script type="text/x-mathjax-config">
      MathJax.Hub.Queue(function() {
          // Fix <code> tags after MathJax finishes running. This is a
          // hack to overcome a shortcoming of Markdown. Discussion at
