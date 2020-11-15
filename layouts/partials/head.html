@@ -1,0 +1,16 @@
+<head>
+  {{ partial "meta.html" . }}
+  <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
+  <link rel="canonical" href="{{ .Site.BaseURL }}" />
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.020/css/hack-extended.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/main.css"/>
+  <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/customize.css"/>
+  <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/zenburn.min.css">
+  <script type="text/javascript" src="{{ .Site.BaseURL }}js/highlight.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  {{ partial "mathjax.html" . }}
+</head>
