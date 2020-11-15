@@ -31,14 +31,14 @@ Rejection sampling的主要思想是用另一个容易产生的概率分布$ G $
 * step 1 和 step 2 调用的次数$ N $(也就是成功采样获得一个$ X $所需的迭代次数)本身也是一个服从几何分布的随机变量。其一次试验就发生的概率$ p=P(U\leqslant \frac{f(Y)}{cg(Y)}) $，则$ P(N=n)=(1-p)^{n-1}p, n\geqslant 1 $。因此迭代次数的期望为$ E(N)=1/p $。
 * 最终，我们可以将所期望获得的随机变量$ X $的概率分布$ F $等价于在事件$ \{U\leqslant \frac{f(Y)}{cg(Y)}\} $发生的条件下，随机变量$ Y $的概率分布。
 <br/>
-另外，若以随机变量$ Y $为条件，事件$ \{U\leqslant \frac{f(Y)}{cg(Y)}\} $发生的概率为：$ P(U\leqslant \frac{f(Y)}{cg(Y)}|Y=y)=\frac{f(y)}{cg(y)} $。考虑到$ Y $的概率密度为$ g(y) $，通过去条件化并对$ Y $所有可能的值上进行积分，这样就可以得到$ p=P(U\leqslant \frac{f(Y)}{cg(Y)}) $，即： 
-$$
+另外，若以随机变量$ Y $为条件，事件$ \{U\leqslant \frac{f(Y)}{cg(Y)}\} $发生的概率为：$ P(U\leqslant \frac{f(Y)}{cg(Y)}|Y=y)=\frac{f(y)}{cg(y)} $。考虑到$ Y $的概率密度为$ g(y) $，通过去条件化并对$ Y $所有可能的值上进行积分，这样就可以得到$ p=P(U\leqslant \frac{f(Y)}{cg(Y)}) $，即：
+`$$
 \begin{align*} 
 p & = \int_{-\infty}^{\infty}\frac{f(y)}{cg(y)}\times g(y)\text{d}y\\
   & = \frac{1}{c}\int_{-\infty}^{\infty}f(y)\text{d}y\\
   & = \frac{1}{c} 
 \end{align*}
-$$
+$$`
 因此，算法的迭代次数的期望即为$ E(N)=c $。从这个角度上可以看出，若要使得算法的迭代次数尽可能少，等价于最小化上确界常数$ c $。
 算法成功采样一个随机变量$ X $所需的迭代次数的期望即为上确界常数$ c=\text{sup}_x\{f(x)/g(x)\} $。
 <br>
