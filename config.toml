@@ -9,5 +9,5 @@ theme = "hugo-theme-blueberry-detox"
       unsafe = true
 
 [Params]
-  Author = "Angelds Wang"
+  Author = "AngeldsWang"
   disqusShortname = "angeldswang"
